@@ -1,0 +1,56 @@
+DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Order Page</title>
+  </head>
+  <body>
+    <h1>Pisa Pizza</h1>
+    <h2>Build Your Pizza</h2>
+
+
+    <form id="sizeSelect">
+      <h3>How big a pizza you wanna?</h3>
+      <input type="radio" name="size" value="small"> Small<br>
+      <input type="radio" name="size" value="medium"> Medium<br>
+      <input type="radio" name="size" value="large"> Large
+    </form><br>
+
+    <form id="crustSelect">
+      <h3>Pick a crust:</h3>
+      <select id="crust" name="crust">
+        <option value="thin">Thin crust</option>
+        <option value="deep">Deep dish</option>
+      </select>
+    </form><br>
+
+    <form id="toppingsSelect">
+      <h3>Choose your toppings:</h3>
+      <input type="checkbox" name="toppings" value="sprouts">Bean Sprouts  <br>
+      <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni <br>
+      <input type="checkbox" name="toppings" value="cheesey"> Extra cheese<br>
+      <input type="checkbox" name="toppings" value="sprouts">Bean Sprouts  <br>
+      <input type="checkbox" name="toppings" value="jalopeno"> Jalapeno <br>
+      <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
+
+    </form><br>
+
+
+    <form id="customerInfo">
+      <label for="firstName">First Name</label>
+      <input type="text" id="first" name="firstname" placeholder="Your name..">
+      <label for="lastName">Last Name</label>
+      <input type="text" id="last" name="lastname" placeholder="Your last name..">
+      <label for="address1"> Address</label>
+      <input type="text" id="address" name="address" placeholder="Please enter your street address">
+      <input type="text" id="zip" name="lastname" placeholder="Zipcode"
+    </form><br>
+
+    <button type="button" name="button">Submit Order</button>
+  </form>
+
+  </body>
+</html>
