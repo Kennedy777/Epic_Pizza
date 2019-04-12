@@ -15,7 +15,7 @@ Epicodus independent project, Week 4 of Intro to Programming.
 
 ## Setup/Installation Requirements
 
-Open browser, navigate to https://kennedy777.github.io/Pisa_Pizza/
+Open browser, navigate to https://kennedy777.github.io/Epic_Pizza/
 
 
 ## Known Bugs
