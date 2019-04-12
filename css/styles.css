@@ -1,23 +1,27 @@
 
 
-#container {
-  width: 100%;
-  padding: 30px;
+html {
+  height: 100%;
   background-color:#000000;
-  background: url("../images/pizzaCat.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url("../images/pizzaCat.jpg") no-repeat center center;
+  background-size: cover;
+  background-position-y: inherit;
   font-family: sans-serif;
   /* background-color: darkred; */
   color: white;
 }
 
+#container {
+  padding: 15px;
+  margin: 15px;
+}
 body {
   margin:0;
   padding:0;
 }
 
 h1 {
+  font-size: 2.5em;
   padding-top:0;
   margin-top:0;
 }
