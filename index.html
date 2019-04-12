@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Order Page</title>
   </head>
   <body>
-    <h1>Pisa Pizza</h1>
+    <div id="container">
+    <h1>Epic Pizza by Uncle Codus</h1>
     <h2>Build Your Pizza</h2>
+    <form id=NewOrder>
 
     <form id="sizeSelect">
       <h3>How big a pizza you wanna?</h3>
@@ -32,11 +34,10 @@
       <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni <br>
       <input type="checkbox" name="toppings" value="cheesey"> Extra cheese<br>
       <input type="checkbox" name="toppings" value="sprouts">Bean Sprouts  <br>
-      <input type="checkbox" name="toppings" value="jalopeno"> Jalapeno <br>
+      <input type="checkbox" name="toppings" value="jalapeno"> Jalapeno <br>
       <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
 
     </form><br>
-
     <form id="customerInfo">
       <label for="firstName">First Name</label>
       <input type="text" id="first" name="firstname" placeholder="Your name..">
@@ -48,7 +49,7 @@
     </form><br>
 
     <button type="button" name="button">Submit Order</button>
-  </form>
-
+   </form>
+  </div>
   </body>
 </html>

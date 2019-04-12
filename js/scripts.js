@@ -23,19 +23,15 @@ if (this.size==small){
 PizzaOrder.prototype.addToppings = function() {
 
 }
-
-
 }
 };
-// Front
+
 $(document).ready(function(){
   $("form#NewOrder").click(function(event){
     var size=$("#size");
     var topping=$("#option");
-    var pizza = new PizzaOrder(size,topping);
+    var pizza = new Order(size,topping);
     pizza.addSize(size);
-
-
 
 var toppingsPrice = 0;
   $("input:checkbox[name=toppings]:checked").each(function() {
