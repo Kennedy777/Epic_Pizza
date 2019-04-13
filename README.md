@@ -12,6 +12,7 @@ Epicodus independent project, Week 4 of Intro to Programming.
 
 ### Specs
 
+https://docs.google.com/document/d/1ioVD-nuXHf62W-gMz6uTP3Y-4evBmyaDfdJkRZ2V2H0/edit?usp=sharing
 
 ## Setup/Installation Requirements
 
