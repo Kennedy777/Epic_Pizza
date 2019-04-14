@@ -1,5 +1,3 @@
-
-
 html {
   height: 100%;
   background-color:#000000;
@@ -9,6 +7,10 @@ html {
   font-family: sans-serif;
   /* background-color: darkred; */
   color: white;
+}
+
+#confirmation {
+  display: none;
 }
 
 #container {
