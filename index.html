@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!-- I took out Bootstrap, because preferred a "retro" style page <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -11,51 +11,42 @@
     <div id="container">
     <h1>Epic Pizza by Uncle Odus</h1>
     <h2>Build Your Pizza</h2>
+
     <form id="Order">
 
-    <form id="sizeSelect">
+    <div class="radio">
       <h3>How big a pizza you wanna?</h3>
       <input type="radio" name="size" value="small"> Small<br>
-      <input type="radio" name="size" value="medium"> Medium<br>
+      <input type="radio" name="size" " value="medium"> Medium<br>
       <input type="radio" name="size" value="large"> Large
-    </form><br>
+    </div><br>
 
-    <form id="crustSelect">
+    <div class="radio">
       <h3>Pick a crust:</h3>
-      <select id="crust" name="crust">
-        <option value="thin">Thin crust</option>
-        <option value="deep">Deep dish</option>
-      </select>
-    </form><br>
+      <input type="radio" name="crust" value="thin"> Brooklyn style (thin crust)<br>
+      <input type="radio" name="crust" value="deep"> Chicago style (deep-dish)<br>
+    </div><br>
 
-    <form id="toppings">
+    <div class="radio">
       <h3>Choose your toppings:</h3>
-      <input type="checkbox" name="toppings" value="sprouts"> Bean Sprouts  <br>
-      <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni <br>
-      <input type="checkbox" name="toppings" value="cheesey"> Extra cheese<br>
-      <input type="checkbox" name="toppings" value="onions"> Onions<br>
-      <input type="checkbox" name="toppings" value="jalapeno"> Jalapeno <br>
-      <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
+      <label><input type="checkbox" value="bean-sprouts" name="toppings" > Bean Sprouts </label>
+      <label><input type="checkbox" value="pepperoni" name="toppings"> Pepperoni </label>
+      <label><input type="checkbox" value="cheese" name="toppings"> Extra cheese</label>
+      <label><input type="checkbox" value="onions" name="toppings"> Onions</label>
+      <label><input type="checkbox" value="jalapeno" name="toppings"> Jalapeno </label>
+      <label><input type="checkbox" value="pineapple" name="toppings"> Pineapple<br>
+      </label>
+    </div>
+  <button type="submit" id="button">Submit Order</button>
+</form>
 
-    </form><br>
-    <form id="customerInfo">
-      <label for="firstName">First Name</label><br>
-      <input type="text" id="first" name="firstname" placeholder="Your name..">
-      <label for="lastName">Last Name</label>
-      <input type="text" id="last" name="lastname" placeholder="Your last name..">
-      <label for="address1">Address</label><br>
-      <input type="text" id="address" name="address" placeholder="Please enter your street address">
-      <label for="zip">Zip</label><br>
-      <input type="text" id="zip" name="lastname" placeholder="Zip"
-    </form><br><br>
-    <button type="button" name="button">Submit Order</button>
-   </form>
     <div id="confirmation">
       <h4> Thank you for your order!</h4><br>
-      Your total is: $<span class=finalPrice> </span>
-      <p>You'll enjoy a hot <span id="orderReview"> </span> in less than 30 minutes. Buono Appetito!</p>
+      Your total is:$<span id="finalPrice"> </span>
+      <p>You'll enjoy a hot <span id="orderReview"> </span> in less than 30 minutes. Buon Appetito!</p>
 
    </div>
   </div>
  </body>
+
 </html>
