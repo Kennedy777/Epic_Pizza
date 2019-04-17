@@ -7,12 +7,14 @@ April 12, 2019
 
 ## Description
 
-A practice website site for ordering a pizza from a restaurant, where a customer can select toppings, crust, etc., and the price is calculated and a confirmation given.
-Epicodus independent project, Week 4 of Intro to Programming.
+A practice website site for ordering a pizza from a fictionalo restaurant.
 
 ### Specs
 
-https://docs.google.com/document/d/1ioVD-nuXHf62W-gMz6uTP3Y-4evBmyaDfdJkRZ2V2H0/edit?usp=sharing
+A customer can select toppings, crust, etc., and the price is calculated and a confirmation given.
+Epicodus independent project, Week 4 of Intro to Programming.
+
+
 
 ## Setup/Installation Requirements
 
