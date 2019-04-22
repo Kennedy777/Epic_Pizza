@@ -2,7 +2,7 @@
   function Order(size, crust, toppings){
     this.size=size;
     this.crust=crust;
-    this.toppings=toppings;
+    this.toppings=[];
     this.basePrice=0;
   }
 

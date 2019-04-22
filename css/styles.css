@@ -10,6 +10,7 @@ html {
 }
 
 #confirmation {
+  display: none;
   padding: 15px;
   margin: 15px;
   background-color: purple;
@@ -29,3 +30,5 @@ h1 {
   padding-top:0;
   margin-top:0;
 }
+
+
