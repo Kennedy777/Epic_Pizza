@@ -18,9 +18,9 @@
   }
 }
 
-Order.prototype.confMessage = function() {
-  return "Thank you for your order! Your total will be: $" + this.basePrice;
-};
+// Order.prototype.confMessage = function() {
+//   return "Thank you for your order! Your total will be: $" + this.basePrice;
+// };
 
 // Front
 $(document).ready(function(){
@@ -31,12 +31,11 @@ $(document).ready(function(){
     var myTops = [];
     $("input[name=toppings]:checked").each(function(){
        myTops.push($(this).val());
-    });
+    })
 
     var orderConf= new Order(mySize, myCrust, myTops);
-
     $("#confirmation").show();
-     $("#orderReview").text(receipt);
+    //  $("#orderReview").text(receipt);
      $("#finalPrice").text(calculateTotal());
   });
 });
