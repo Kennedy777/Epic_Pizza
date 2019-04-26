@@ -1,25 +1,19 @@
-html {
+body {
   height: 100%;
   background-color:#000000;
   background: url("../images/pizzaCat.jpg") no-repeat center center;
   background-size: cover;
   background-position-y: inherit;
   font-family: sans-serif;
-  /* background-color: darkred; */
   color: white;
 }
 
-#confirmation {
-  display: none;
+.container {
   padding: 15px;
   margin: 15px;
-  background-color: purple;
 }
 
-#container {
-  padding: 15px;
-  margin: 15px;
-}
+
 body {
   margin:0;
   padding:0;

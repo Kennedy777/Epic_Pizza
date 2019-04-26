@@ -1,41 +1,38 @@
-// business logifunction Order (sizeSelect, crustType, toppings){
-  function Order(size, crust, toppings){
-    this.size=size;
-    this.crust=crust;
-    this.toppings=[];
-    this.basePrice=0;
-  }
-
- Order.prototype.calculateTotal = function(){
-  if (this.size=="small"){
-     this.basePrice +=12;
-      }else if(this.size=="medium"){
-     this.basePrice +=16;
-  } else {
-     this.basePrice +=20;
-   } for (i=0; i<this.toppings.length; i++){
-       this.basePrice +=2;
-  }
+// business logic 
+function Order (size, toppings) {  
+  this.size = size;
+  this.toppings = toppings;
 }
 
-// Order.prototype.confMessage = function() {
-//   return "Thank you for your order! Your total will be: $" + this.basePrice;
-// };
+Order.prototype.calcPrice = function () {
+  var price = 0;
 
-// Front
+  if (this.size === "Small") {
+    price += 12;
+  } else if (this.size === "Medium") {
+    price += 16;
+  } else if (this.size === "Large") {
+    price += 10;
+  }
+  for (var i = 0; i < this.toppings.length; i++) {
+    price +=1;
+  }
+  return price;
+}
+//User interface logic
+
 $(document).ready(function(){
-  $("form#Order").submit(function(event){
+  $("form").submit(function(event){
     event.preventDefault();
-    var mySize =  $("input[name=size]:checked").val();
-    var myCrust = $("input[name=crust]:checked").val();
-    var myTops = [];
-    $("input[name=toppings]:checked").each(function(){
-       myTops.push($(this).val());
-    })
 
-    var orderConf= new Order(mySize, myCrust, myTops);
-    $("#confirmation").show();
-    //  $("#orderReview").text(receipt);
-     $("#finalPrice").text(calculateTotal());
+    var mySize = $("#size-select").val();
+    var myToppings = $('.topping-option:checkbox:checked').map(function() {
+      return this.value;
+    }).get();
+
+    var pizzaOrder = new Order(mySize, myToppings);
+
+    $(".cost").text("$"+pizzaOrder.calcPrice());
+
   });
 });
