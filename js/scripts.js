@@ -31,7 +31,8 @@ $(document).ready(function(){
     }).get();
 
     var pizzaOrder = new Order(mySize, myToppings);
-
+    
+    $(".show-price").show();
     $(".cost").text("$"+pizzaOrder.calcPrice());
 
   });

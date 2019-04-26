@@ -5,7 +5,18 @@ body {
   background-size: cover;
   background-position-y: inherit;
   font-family: sans-serif;
-  color: white;
+  font display: inline;
+  color: yellow;
+  margin:0;
+  padding:15px;
+}
+
+.show-price {
+   display: none;
+   color: rgb(211, 211, 26) 
+   text-align: left; 
+   font-size: 1.5em;
+   font-weight: bold;
 }
 
 .container {
@@ -13,16 +24,22 @@ body {
   margin: 15px;
 }
 
-
-body {
-  margin:0;
-  padding:0;
-}
-
-h1 {
+h1, h2 {
+  padding: 25px;
   font-size: 2.5em;
   padding-top:0;
   margin-top:0;
 }
 
+#Order {
+ margin: 30px;
+ padding: 15px;
+ color: yellow;
+ text-decoration: blueviolet;
+}
+
+.cost {
+  color: darkblue;
+  text-emphasis: bold;
+}
 
